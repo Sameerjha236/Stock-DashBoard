@@ -32,13 +32,13 @@ const Search = () => {
 
       {input && (
         <button onClick={clear}>
-          <XIcon className="h-4 w-4 fill-gray-500 mr-0" />
+          <XIcon className="h-4 w-4 fill-gray-500 m-1" />
         </button>
       )}
 
       <button
         onClick={updateBestMatches}
-        className="h-8 w-8  flex justify-center items-center bg-sky-600 rounded-md mr-1"
+        className="h-8 w-8  flex justify-center items-center bg-sky-600 rounded-md"
       >
         <SearchIcon className="h-4 w-4 fill-gray-100 " />
       </button>
