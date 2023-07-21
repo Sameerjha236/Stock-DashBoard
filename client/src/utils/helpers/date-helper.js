@@ -12,4 +12,5 @@ export const createDate = (date, days, week, months, years) => {
   newDate.setDate(newDate.getDate() + days + 7 * week);
   newDate.setMonth(newDate.getMonth() + months);
   newDate.setFullYear(newDate.getFullYear() + years);
+  return newDate;
 };

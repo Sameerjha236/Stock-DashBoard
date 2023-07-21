@@ -1,6 +1,6 @@
 import React from "react";
 import { MoonIcon } from "@heroicons/react/solid";
-import { useGlobalContext } from "../context/ThemeContext";
+import { useGlobalContext } from "../context/Context";
 const ThemeIcon = () => {
   const { darkMode, setDarkMode } = useGlobalContext();
   return (

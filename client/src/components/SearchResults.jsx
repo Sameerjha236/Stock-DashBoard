@@ -1,8 +1,8 @@
 import React from "react";
-import { useGlobalContext } from "../context/ThemeContext";
+import { useGlobalContext } from "../context/Context";
 
 const SearchResults = ({ results }) => {
-  const { darkMode } = useGlobalContext();
+  const { darkMode, setStockSymbol } = useGlobalContext();
   return (
     <ul
       className={`absolute top-12 border-2 w-full rounded-md h-64 overflow-y-scroll ${
@@ -18,6 +18,9 @@ const SearchResults = ({ results }) => {
             className={`cursor-pointer p-4 m-2 flex items-center justify-between rounded-md ${
               darkMode ? "hover:bg-indigo-600" : " hover:bg-indigo-200"
             }`}
+            onClick={() => {
+              setStockSymbol(item.symbol);
+            }}
           >
             <span>{item.symbol}</span>
             <span>{item.description}</span>

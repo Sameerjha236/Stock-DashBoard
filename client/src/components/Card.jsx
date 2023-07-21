@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "../context/ThemeContext";
+import { useGlobalContext } from "../context/Context";
 
 const Card = ({ children }) => {
   const { darkMode } = useGlobalContext();

@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 import DashBoard from "./components/DashBoard";
-import { ThemeProvider } from "./context/ThemeContext";
+import { AppProvider } from "./context/Context";
 function App() {
   return (
-    <ThemeProvider>
+    <AppProvider>
       <DashBoard />
-    </ThemeProvider>
+    </AppProvider>
   );
 }
 
